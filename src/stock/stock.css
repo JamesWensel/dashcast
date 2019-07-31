@@ -4,6 +4,7 @@
   width: 35%;
   height: 150px;
   border: solid gray 5px;
+  border-radius: 20px;
 }
 
 #logo {

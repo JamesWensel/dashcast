@@ -19,13 +19,13 @@ function WeatherWidget() {
   const cityID = config.cityID;
   const appID = config.appID;
 
-  const currentURL =
+  const currentURL = 
     "https://api.weatherbit.io/v2.0/current?key=" +
     appID +
     "&city_id=" +
     cityID +
     "&units=I";
-
+  
   const forecastURL =
     "https://api.weatherbit.io/v2.0/forecast/daily?key=" +
     appID +
@@ -48,7 +48,7 @@ function WeatherWidget() {
       setDay2(forecastData.data[2]);
       setDay1Condition(forecastData.data[1].weather.description);
       setDay2Condition(forecastData.data[2].weather.description);
-      setCurrentCode(currentData.data[0].weather.code)
+      setCurrentCode(currentData.data[0].weather.code);
       setNextCode(forecastData.data[1].weather.code);
       setLateCode(forecastData.data[2].weather.code);
     }

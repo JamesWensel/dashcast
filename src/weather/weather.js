@@ -4,7 +4,7 @@ import "./weather.css";
 function getIcon(code) {
   let imagePath;
   if (code >= 200 && code < 300) {
-    imagePath = "./images/tstormj.png"; //tstorm
+    imagePath = "./images/tstorm.png"; //tstorm
   } else if (code >= 300 && code < 600) {
     imagePath = "./images/rain.png"; //rain
   } else if (code >= 600 && code < 700) {
@@ -19,14 +19,13 @@ function getIcon(code) {
   return imagePath;
 }
 
-
 const WeatherHeader = () => <h1> Mount Pleasant, SC </h1>;
 
 const WeatherToday = ({ condition, temp, humidity, feel, currentCode }) => {
   return (
     <div id="todayCast">
       <label id="temp"> {temp}° </label> <br />
-      <img id="currentImg" src={getIcon(currentCode)} alt="" /> <br />
+      <img id="currentImg" src={getIcon(parseInt(currentCode, 10))} alt="" /> <br />
       <label id="condition"> {condition} </label> <br />
       <div id="extra">
         <label> Humidity: {humidity}% </label> <br />
@@ -53,6 +52,7 @@ const Tomorrow = ({ day1, day1Condition, nextCode }) => {
 };
 
 const TwoDaysLater = ({ day2, day2Condition, lateCode }) => {
+  console.log(lateCode);
   return (
     <div id="later">
       <label className="title"> Next Day: </label> <br/>
