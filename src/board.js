@@ -7,7 +7,7 @@ import "./dash.css";
 function Board() {
     useEffect(() => {
         async function changeImage() {
-            const image = await fetch('https://source.unsplash.com/collection/8272744/1800x1200')
+            const image = await fetch('https://source.unsplash.com/collection/8272744/1700x1100')
             document.body.style.backgroundImage = "url(" + image.url + ")";
         }
         changeImage();
