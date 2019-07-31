@@ -6,13 +6,14 @@ function useTime() {
   useEffect(() => {
     async function formatTime() {
       let now = new Date();
+      let pm = 1 && now.getHours() > 12; 
       let hours = 
         now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
       let minutes =
         now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
       let seconds =
         now.getSeconds() < 10 ? "0" + now.getSeconds() : now.getSeconds();
-      setTime(hours + ":" + minutes + ":" + seconds);
+      setTime(hours + ":" + minutes + ":" + seconds + " " + (pm ? "pm" : "am"));
     }
 
     formatTime();
