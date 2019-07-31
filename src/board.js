@@ -17,7 +17,7 @@ function Board() {
 
         const interval = setInterval(() => {
             changeImage();
-          }, 10000);
+          }, 20000);
           return () => clearInterval(interval);
 
     }, []);
@@ -26,7 +26,8 @@ function Board() {
     return (
         <div id="board" >
             <div id="widget"> 
-                 <WeatherWidget /> 
+                 <WeatherWidget /> <br /> 
+                <Clock />
             </div> 
             <div>
                 <StockWidget />

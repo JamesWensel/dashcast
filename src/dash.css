@@ -2,8 +2,11 @@ body {
    /* background-image: url("https://source.unsplash.com/user/kirstenfloyd/likes"); */
 }
 
-#weather {
+#widget {
     float: right;
     width: 35%;
 }
 
+#clock {
+   
+}

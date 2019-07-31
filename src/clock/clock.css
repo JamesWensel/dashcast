@@ -1,9 +1,11 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  #Date {
+#Date {
     font-size: 15px;
+  }
+
+#clock {
+    background-color: lightcyan;
+    border: solid gray 5px;
+    text-align: center;
+    
   }
   
