@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import WeatherWidget from "./weather/WeatherWidget";
 import StockWidget from "./stock/StockWidget";
 import Clock from "./clock/Clock";
@@ -8,8 +8,6 @@ function Board() {
     useEffect(() => {
         async function changeImage() {
             const image = await fetch('https://source.unsplash.com/collection/8272744/1800x1200')
-            const url = image.url;
-            console.log(image.url);
             document.body.style.backgroundImage = "url(" + image.url + ")";
         }
         changeImage();

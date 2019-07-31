@@ -48,7 +48,7 @@ function WeatherWidget() {
       setDay2(forecastData.data[2]);
       setDay1Condition(forecastData.data[1].weather.description);
       setDay2Condition(forecastData.data[2].weather.description);
-      setCurrentCode(currentData.data[0].weather.code)
+      setCurrentCode(currentData.data[0].weather.code);
       setNextCode(forecastData.data[1].weather.code);
       setLateCode(forecastData.data[2].weather.code);
     }
