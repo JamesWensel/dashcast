@@ -6,7 +6,8 @@ function useTime() {
   useEffect(() => {
     async function formatTime() {
       let now = new Date();
-      let hours = now.getHours();
+      let hours = 
+        now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
       let minutes =
         now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
       let seconds =
