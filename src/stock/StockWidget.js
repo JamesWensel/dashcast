@@ -4,7 +4,7 @@ import "./stock.css";
 
 function StockWidget() {
   return (
-    <div className="App">
+    <div id="stock">
       <img id="logo" src="./images/trhcLogo.png" alt="TRHC Logo" />
       <Stock />
     </div>

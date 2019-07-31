@@ -1,5 +1,9 @@
-.App {
+#stock {
   text-align: center;
+  background-color: lightcyan;
+  width: 35%;
+  height: 150px;
+  border: solid gray 10px;
 }
 
 #logo {
