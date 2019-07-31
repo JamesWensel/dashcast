@@ -9,13 +9,3 @@
   height: 50px;
   background-image: url(trhcLogo.png);
 }
-
-.Stock {
-  position: relative;
-  padding: 10px;
-  left: 40%;
-  top: 20px;
-  width: 260px;
-  height: 150px;
-  background-color: lightblue;
-}
