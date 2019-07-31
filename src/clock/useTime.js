@@ -1,16 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Clock from "./Clock";
+import { useState, useEffect } from "react";
 
-import "./styles.css";
+function useTime() {
+  const [time, setTime] = useState(10);
 
-function App() {
-  return (
-    <div className="App">
-      <Clock />
-    </div>
-  );
+  useEffect(() => {
+    async function formatTime() {
+      let now = new Date();
+      let hours = now.getHours();
+      let minutes =
+        now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
+      let seconds =
+        now.getSeconds() < 10 ? "0" + now.getSeconds() : now.getSeconds();
+      setTime(hours + ":" + minutes + ":" + seconds);
+    }
+
+    formatTime();
+
+    const interval = setInterval(() => {
+      formatTime();
+    }, 1000);
+    return () => clearInterval(interval);
+  });
+
+  return { time };
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default useTime;
