@@ -1,17 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Stock from "./Stock";
+import Board from "./board";
 
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <img id="logo" src="trhcLogo.png" alt="TRHC Logo" />
-      <Stock />
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Board />, document.getElementById("root"));

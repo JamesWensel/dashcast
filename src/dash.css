@@ -1,0 +1,9 @@
+body {
+    background-color: lightsteelblue;
+}
+
+#weather {
+    float: right;
+    width: 35%;
+}
+

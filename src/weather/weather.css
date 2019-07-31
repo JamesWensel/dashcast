@@ -1,0 +1,87 @@
+  .WeatherWidget {
+    font-family: sans-serif;
+    text-align: center;
+    height: 150px;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
+  
+  #temp {
+    font-size: 60px;
+  }
+  
+  #condition {
+    font-size: 20px;
+  }
+
+  .title {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #currentImg {
+    height: 70px;
+    width: 70px;
+  }
+  
+  #extra {
+    margin: auto;
+    float: center;
+    width: 30%;
+    padding-top:20px;
+    font-size: 15px;
+    background-color: white;
+  }
+  
+  #todayCast {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: auto;
+    float: center;
+    background-color: seashell;
+  }
+  
+  #weather {
+    background-color: rgba(191, 230, 230, 0.5);
+    width: 100%;
+    float: center;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #forecast {
+    width: 100%;
+    height: 200px;
+    background-color:lightcyan;
+  }
+  
+  #tomorrow {
+    float: left;
+    width: 45%;
+    padding-left: 10px;
+  }
+  
+  #later {
+    width: 40%;
+    float: right;
+    padding-right: 10px;
+  }
+  
+  .futureCondition {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .laterExtra {
+    font-size: 15px;
+    background-color: white;
+  }
+  
+  

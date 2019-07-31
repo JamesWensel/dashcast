@@ -1,6 +1,6 @@
 import React from "react";
 import useStockAPI from "./useStockAPI";
-const config = require("./config.js");
+const config = require("../config.js");
 
 const url = config.url;
 
