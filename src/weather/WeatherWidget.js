@@ -19,13 +19,13 @@ function WeatherWidget() {
   const cityID = config.cityID;
   const appID = config.appID;
 
-  const currentURL =
+  const currentURL = 
     "https://api.weatherbit.io/v2.0/current?key=" +
     appID +
     "&city_id=" +
     cityID +
     "&units=I";
-
+  
   const forecastURL =
     "https://api.weatherbit.io/v2.0/forecast/daily?key=" +
     appID +

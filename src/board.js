@@ -5,7 +5,6 @@ import Clock from "./clock/Clock";
 import "./dash.css";
 
 function Board() {
-
     useEffect(() => {
         async function changeImage() {
             const image = await fetch('https://source.unsplash.com/collection/8272744/1800x1200')
@@ -17,16 +16,15 @@ function Board() {
 
         const interval = setInterval(() => {
             changeImage();
-          }, 20000);
-          return () => clearInterval(interval);
+        }, 20000);
+        return () => clearInterval(interval);
 
     }, []);
     
-
     return (
         <div id="board" >
             <div id="widget"> 
-                 <WeatherWidget /> <br /> 
+                <WeatherWidget /> <br /> 
                 <Clock />
             </div> 
             <div>

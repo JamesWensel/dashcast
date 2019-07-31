@@ -19,7 +19,6 @@ function getIcon(code) {
   return imagePath;
 }
 
-
 const WeatherHeader = () => <h1> Mount Pleasant, SC </h1>;
 
 const WeatherToday = ({ condition, temp, humidity, feel, currentCode }) => {
