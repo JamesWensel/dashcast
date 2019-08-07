@@ -9,12 +9,13 @@ function Stock() {
   let formattedClose = parseFloat(close).toFixed(2);
   let formattedOpen = parseFloat(open).toFixed(2);
   let difference = (formattedClose - formattedOpen).toFixed(2);
-  let change = difference >= 0 ? "+$" + difference : "$" + difference;
+  let change = difference >= 0 ? "+$" + difference : "-$" + Math.abs(difference);
 
   return (
-    <h1 id="stockPrice">
-      TRHC Stock Price: ${formattedClose} {change}
-    </h1>
+    <div id="stockInfo">
+      <div id="stockPrice"> Stock Value: ${formattedClose} </div> 
+      <div id="change"> {change} </div>
+    </div>
   );
 }
 

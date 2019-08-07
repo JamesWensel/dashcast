@@ -1,11 +1,19 @@
-#Date {
-    font-size: 15px;
+#clock {
+  text-align: center;
+  background-color: black;
+  opacity: .7;
+  width: 500px;;
+  height: 100px;
+  border: solid gray 3px;
+  font-size: 40px;
+  color: white;
   }
 
-#clock {
-    background-color: lightcyan;
-    border: solid gray 5px;
-    text-align: center;
-    border-radius: 20px;
-  }
+#date {
+
+}
+
+#time {
+
+}
   

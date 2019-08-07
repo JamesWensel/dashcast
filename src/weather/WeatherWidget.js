@@ -62,7 +62,7 @@ function WeatherWidget() {
   }, []);
 
   return (
-    <div id="WeatherWidget">
+    <div id="weather">
       <Weather
         condition={condition}
         temp={temp}

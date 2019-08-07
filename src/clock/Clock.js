@@ -9,10 +9,8 @@ function Clock() {
 
   return (
     <div id="clock">
-      <h1 id="Time">
-        {time}
-        <p id="Date">{date}</p>
-      </h1>
+      <div id="time">{time} </div>
+      <div id="date">{date}</div>
     </div>
   );
 }

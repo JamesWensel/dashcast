@@ -23,10 +23,11 @@ function Board() {
         <div id="board" >
             <div id="widget"> 
                 <WeatherWidget /> <br /> 
-                <Clock />
+                
             </div> 
             <div>
                 <StockWidget />
+                <Clock />
             </div>
         </div>
     );

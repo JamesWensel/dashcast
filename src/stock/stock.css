@@ -1,16 +1,29 @@
 #stock {
   text-align: center;
-  background-color: lightcyan;
+  background-color: black;
+  opacity: .7;
   width: 35%;
-  height: 150px;
-  border: solid gray 5px;
-  border-radius: 20px;
+  height: 200px;
+  border: solid gray 3px;
 }
 
 #logo {
   position: relative;
   top: 20px;
-  width: 110px;
-  height: 50px;
-  /*background-image: url(./trhcLogo.png);*/
+  width: 120px;
+  height: 70px;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+#stockInfo {
+  font-size: 40px;
+}
+
+#stockPrice {
+  color: white;
+}
+
+#change {
+  color: red;
 }

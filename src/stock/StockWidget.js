@@ -5,7 +5,7 @@ import "./stock.css";
 function StockWidget() {
   return (
     <div id="stock">
-      <img id="logo" src="./images/trhcLogo.png" alt="TRHC Logo" />
+      <img id="logo" src="./images/trhcLogo.png" alt="TRHC Logo" /> <br/>
       <Stock />
     </div>
   );
