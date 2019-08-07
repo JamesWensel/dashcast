@@ -57,9 +57,8 @@ function WeatherWidget() {
 
     const interval = setInterval(() => {
       fetchData();
-    }, 3600000);
+    }, 1800000);
     return () => clearInterval(interval);
-
   }, []);
 
   return (
