@@ -1,8 +1,8 @@
 #weather {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 400px;
   border: solid gray 2px;
   color: white;
 }
@@ -11,12 +11,12 @@
   padding-top: 10px;
   margin: auto;
   float: center;
-  height: 350px;
+  height: 225px;
 }
 
 #currentInfo {
   width: 100%;
-  height: 325px;
+  height: 25px;
   padding-top: 20px;
 }
 
@@ -27,12 +27,12 @@
 }
 
 #currentImg {
-  height: 150px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
 }
 
 #currentCondition {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #currentRight {
@@ -44,46 +44,44 @@
 }
 
 #temp {
-  font-size: 80px;
-  padding-bottom: 20px;
+  font-size: 50px;
+  padding-bottom: 10px;
 }
 
 #currentExtra {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 35px;
 }
 
 #forecast {
   width: 100%;
-  height: 250px;
+  height: 175px;
   border-top: solid gray 2px;
 }
 
 #tomorrow {
   float: left;
-  width: 300px;
+  width: 50%;
 }
 
 #tomorrowBox {
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 10px;
-  margin: auto;
-  float: center;
-  height: 220px;
+  height: 150px;
   border-right: solid gray 2px;
 }
 
 #later {
   float: right;
-  width: 300px;
+  width: 50%;
 }
 
 #laterBox {
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 15px;
   margin: auto;
   float: center;
@@ -95,38 +93,39 @@
 }
 
 .header {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .info {
-  width: 300px;
-  height: 200px;
-  font-size: 15px;
-  padding-top: 30px;
+  width: 200px;
+  height: 175px;
+  font-size: 10px;
+  padding-top: 10px;
 }
 
 .icon {
-  height: 75px;
-  width: 75px;
+  height: 70px;
+  width: 70px;
+  float: left;
+  padding-left: 10px;
 }
 
 .condition {
-  font-size: 18px;
+  font-size: 14px;
   float: left;
-  padding-left: 25px;
-  padding-top: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .left {
   float: left;
-  width: 140px;
+  width: 50%;
   text-align: center;
 }
 
 .right {
   float: right;
-  width: 130px;
-  padding-right: 30px;
+  width: 50%;
 }
 
 label {

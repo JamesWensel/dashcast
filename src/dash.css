@@ -34,11 +34,9 @@ body {
 }
 
 #two {
-    text-align: right;
+    position: relative;
     width: 50%;
-    float: right;
-    position: center;
-    margin: auto;
+    float: left;
 }
 
 #three {

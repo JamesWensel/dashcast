@@ -9,6 +9,7 @@ function Board() {
         async function changeImage() {
             const image = await fetch('https://source.unsplash.com/collection/8272744/1700x1100')
             document.body.style.backgroundImage = "url(" + image.url + ")";
+            console.log(image.url)
         }
         changeImage();
 
