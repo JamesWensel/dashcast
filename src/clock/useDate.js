@@ -17,7 +17,7 @@ const monthArray = [
   "May",
   "June",
   "July",
-  "August",
+  "August",  
   "September",
   "November",
   "December"
@@ -26,7 +26,7 @@ const monthArray = [
 function useDate() {
   const [date, setDate] = useState(0);
 
-  useEffect(() => {
+  function getCurrentDate() {
     let today = new Date();
 
     setDate(
@@ -36,9 +36,14 @@ function useDate() {
         " " +
         today.getDate()
     );
-  }, []);
+  }
 
-  return { date };
+  useEffect(() => {
+    getCurrentDate();
+    setInterval(getCurrentDate(), 3600000);
+  }, [])
+
+  return { date }; 
 }
 
 export default useDate;
