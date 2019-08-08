@@ -1,8 +1,8 @@
 #weather {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 450px;
   border: solid gray 2px;
   color: white;
 }
@@ -11,7 +11,12 @@
   padding-top: 10px;
   margin: auto;
   float: center;
-  height: 225px;
+  height: 250px;
+}
+
+#currentHeader {
+  font-size: 50px;
+  padding-bottom: 20px;
 }
 
 #currentInfo {
@@ -49,69 +54,62 @@
 }
 
 #currentExtra {
-  font-size: 20px;
-  padding-top: 35px;
+  font-size: 25px;
+  padding-top: 20px;
 }
 
 #forecast {
-  width: 100%;
-  height: 175px;
+  width:600px;
+  height: 200px;
   border-top: solid gray 2px;
 }
 
 #tomorrow {
   float: left;
-  width: 50%;
+  width: 300px;
 }
 
 #tomorrowBox {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 5px;
-  padding-right: 10px;
-  height: 145px;
+  
+  height: 170px;
   border-right: solid gray 2px;
 }
 
 #later {
   float: right;
-  width: 50%;
+  width: 300px;
 }
 
 #laterBox {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
-  padding-right: 15px;
   margin: auto;
   float: center;
 }
 
-#currentHeader {
-  font-size: 50px;
-  padding-bottom: 20px;
-}
-
 .header {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .info {
-  width: 200px;
+  width: 300px;
   height: 175px;
-  font-size: 11px;
+  font-size: 20px;
   padding-top: 10px;
 }
 
 .icon {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   float: left;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .condition {
-  font-size: 14px;
   float: left;
   padding-left: 15px;
   padding-top: 10px;
@@ -119,13 +117,15 @@
 
 .left {
   float: left;
-  width: 50%;
+  width: 150px;
   text-align: center;
 }
 
 .right {
-  float: right;
-  width: 50%;
+  float: center;
+  width: 150px;
+  margin: auto;
+  font-size: 15px;
 }
 
 label {
