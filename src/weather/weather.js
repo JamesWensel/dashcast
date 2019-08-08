@@ -21,7 +21,7 @@ function getIcon(code) {
 
 function getDay(day) {
   let weekday = new Array(7);
-  weekday[0] =  "Sunday";
+  weekday[0] = "Sunday";
   weekday[1] = "Monday";
   weekday[2] = "Tuesday";
   weekday[3] = "Wednesday";
@@ -34,17 +34,16 @@ function getDay(day) {
 
 
 const WeatherToday = ({ condition, temp, humidity, feel, currentCode }) => {
-  //<img id="currentImg" src={getIcon(parseInt(currentCode, 10))} alt="" /> <br />
   return (
     <div id="todayCast">
-      <label id="currentHeader"> Today's forecast </label>
+      <label id="currentHeader"> Today's Forecast </label>
       <div id="currentInfo">
         <div id="currentLeft">
-          <img id="currentImg" src={getIcon(801)} alt="" /> <br />
+        <img id="currentImg" src={getIcon(parseInt(currentCode, 10))} alt="" /> <br />
           <label id="currentCondition"> {condition} </label> <br />
         </div>  
         <div id="currentRight">
-          <label id="temp"> {temp}° </label> <br />
+          <label id="temp"> {temp}°F </label> <br />
           <div id="currentExtra">
             <label> Humidity: {humidity}% </label> <br /> 
             <label> Feels like: {feel}°F </label> 
@@ -61,15 +60,15 @@ const Tomorrow = ({ day1, day1Condition, nextCode }) => {
   return (
     <div id="tomorrow">
       <div id="tomorrowBox">
-        <label className="header"> {w}'s forecast </label> <br/>
+        <label className="header"> {w}'s Forecast </label> <br/>
         <div className="info">
           <div className="left">
-            <img className="icon" src={getIcon(nextCode)} alt="" />
+          <img className="icon" src={getIcon(nextCode)} alt="" />
             <label className="condition"> {day1Condition} </label>
           </div>
           <div className="right">
             <label> High: {Math.round(day1.max_temp)}°F </label> <br />
-            <label> Low: {Math.round(day1.min_temp)}°F </label> <br />
+            <label> Low: {Math.round(day1.min_temp)}°F </label> <br /> <br />
             <label> Humidity: {day1.rh}% </label> <br />
             <label> Chance of Rain: {day1.pop}% </label>
           </div>
@@ -84,16 +83,16 @@ const TwoDaysLater = ({ day2, day2Condition, lateCode }) => {
   let w = getDay(d.getDay() + 2);
   return (
     <div id="later">
-      <div id="laterbox">
-        <label className="header"> {w}'s forecast </label> <br/>
+      <div id="laterBox">
+        <label className="header"> {w}'s Forecast </label> <br/>
         <div className="info">
           <div className="left">
-            <img className="icon" src={getIcon(lateCode)} alt="" />
+          <img className="icon" src={getIcon(lateCode)} alt="" />
             <label className="condition"> {day2Condition} </label> 
           </div>
           <div className="right">
             <label> High: {Math.round(day2.max_temp)}°F </label> <br />
-            <label> Low: {Math.round(day2.min_temp)}°F </label> <br />
+            <label> Low: {Math.round(day2.min_temp)}°F </label> <br /> <br />
             <label> Humidity: {day2.rh}% </label> <br />
             <label> Chance of Rain: {day2.pop}% </label>
           </div>

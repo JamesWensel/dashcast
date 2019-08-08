@@ -1,15 +1,13 @@
 #weather {
   text-align: center;
-  background-color: black;
-  opacity: .7;
+  background: rgba(0, 0, 0, 0.6);
   width: 600px;
   height: 600px;
-  border: solid gray 3px;
+  border: solid gray 2px;
   color: white;
 }
 
 #todayCast {
-  padding-bottom: 20px;
   padding-top: 10px;
   margin: auto;
   float: center;
@@ -18,8 +16,8 @@
 
 #currentInfo {
   width: 100%;
-  height: 300px;
-  padding-top: 30px;
+  height: 325px;
+  padding-top: 20px;
 }
 
 #currentLeft {
@@ -58,32 +56,35 @@
 #forecast {
   width: 100%;
   height: 250px;
-  border-top: solid gray 3px;
+  border-top: solid gray 2px;
 }
 
 #tomorrow {
   float: left;
-  width: 50%;
-  padding-left: 10px;
+  width: 300px;
 }
 
 #tomorrowBox {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   float: center;
+  height: 220px;
+  border-right: solid gray 2px;
 }
 
 #later {
   float: right;
-  width: 45%;
-  padding-right: 10px;
-  border-right: solid gray 3px;
+  width: 300px;
 }
 
 #laterBox {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 15px;
   margin: auto;
   float: center;
 }
@@ -95,14 +96,13 @@
 
 .header {
   font-size: 25px;
-  padding-bottom: 20px;
 }
 
 .info {
   width: 300px;
   height: 200px;
-  font-size: 16px;
-  padding-top: 20px;
+  font-size: 15px;
+  padding-top: 30px;
 }
 
 .icon {
@@ -112,16 +112,23 @@
 
 .condition {
   font-size: 18px;
+  float: left;
+  padding-left: 25px;
+  padding-top: 15px;
 }
 
 .left {
   float: left;
-  width: 120px;
+  width: 140px;
   text-align: center;
 }
 
 .right {
   float: right;
-  width: 150px;
+  width: 130px;
   padding-right: 30px;
+}
+
+label {
+  padding-bottom: 10px;
 }

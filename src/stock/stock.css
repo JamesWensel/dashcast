@@ -1,23 +1,22 @@
 #stock {
   text-align: center;
-  background-color: black;
-  opacity: .7;
-  width: 35%;
+  background: rgba(0, 0, 0, 0.6);
+  width: 350px;
   height: 200px;
-  border: solid gray 3px;
+  border: solid gray 2px;
 }
 
 #logo {
   position: relative;
   top: 20px;
-  width: 120px;
-  height: 70px;
+  width: 130px;
+  height: 80px;
   opacity: 1;
   padding-bottom: 30px;
 }
 
 #stockInfo {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #stockPrice {
@@ -25,5 +24,5 @@
 }
 
 #change {
-  color: red;
+  color: white;
 }

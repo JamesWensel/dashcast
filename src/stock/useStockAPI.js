@@ -11,6 +11,7 @@ function useStockAPI(url) {
   const [low, setLow] = useState(0);
   const [close, setClose] = useState(0);
   const [volume, setVolume] = useState(0);
+  const [color, setColor] = useState("");
   const date = useFormattedDate();
 
   useEffect(() => {
@@ -23,6 +24,14 @@ function useStockAPI(url) {
         setLow(stockData[identifier[2]]);
         setClose(stockData[identifier[3]]);
         setVolume(stockData[identifier[4]]);
+        let difference = (parseFloat(close).toFixed(2) - parseFloat(open).toFixed(2)).toFixed(2);
+        let tmp = null;
+        if (difference >= 0) {
+          tmp = "limegreen";
+        } else {
+          tmp ="red";
+        }
+        setColor(tmp);
       });
     }
 
@@ -39,7 +48,8 @@ function useStockAPI(url) {
     high,
     low,
     close,
-    volume
+    volume,
+    color
   };
 }
 

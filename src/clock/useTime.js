@@ -15,7 +15,7 @@ function useTime() {
         now.getSeconds() < 10 ? "0" + now.getSeconds() : now.getSeconds();
       let pm = 1 && now.getHours() >= 12; 
 
-      setTime(hours + ":" + minutes + ":" + seconds + " " + (pm ? "pm" : "am"));
+      setTime(hours + ":" + minutes + ":" + seconds + " " + (pm ? "PM" : "AM"));
     }
 
     formatTime();
