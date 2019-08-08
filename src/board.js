@@ -22,6 +22,7 @@ function Board() {
     
     return (
         <div id="board" >
+            <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet"/>
             <div id="row1">
                 <div id="one">
                     <Clock />
