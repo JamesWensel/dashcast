@@ -20,7 +20,7 @@ function getIcon(code) {
 }
 
 function getDay(day) {
-  let weekday = new Array(7);
+  let weekday = new Array(8);
   weekday[0] = "Sunday";
   weekday[1] = "Monday";
   weekday[2] = "Tuesday";
@@ -28,7 +28,7 @@ function getDay(day) {
   weekday[4] = "Thursday";
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
-
+  weekday[7] = "Sunday";
   return weekday[day];
 }
 

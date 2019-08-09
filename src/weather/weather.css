@@ -1,7 +1,7 @@
 #weather {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  width: 600px;
+  width: 615px;
   height: 450px;
   border: solid gray 2px;
   color: white;
@@ -59,34 +59,34 @@
 }
 
 #forecast {
-  width:600px;
+  width:615px;
   height: 200px;
   border-top: solid gray 2px;
 }
 
 #tomorrow {
   float: left;
-  width: 300px;
+  width: 305px;
 }
 
 #tomorrowBox {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 5px;
-  
   height: 170px;
   border-right: solid gray 2px;
 }
 
 #later {
-  float: right;
-  width: 300px;
+  float: left;
+  width: 307px;
 }
 
 #laterBox {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   float: center;
 }
@@ -98,14 +98,13 @@
 .info {
   width: 300px;
   height: 175px;
-  font-size: 20px;
   padding-top: 10px;
 }
 
 .icon {
   height: 50px;
   width: 50px;
-  float: left;
+  float: center;
   padding-left: 20px;
 }
 
@@ -113,6 +112,7 @@
   float: left;
   padding-left: 15px;
   padding-top: 10px;
+  font-size: 18px;
 }
 
 .left {
@@ -122,10 +122,10 @@
 }
 
 .right {
-  float: center;
+  float: right;
   width: 150px;
   margin: auto;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 label {

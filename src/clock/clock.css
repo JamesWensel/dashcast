@@ -1,19 +1,11 @@
 #clock {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  width: 600px;;
+  width: 615px;;
   height: 140px;
   border: solid gray 2px;
   font-size: 55px;
   color: white;
   float: center;
   }
-
-#date {
-
-}
-
-#time {
-
-}
   

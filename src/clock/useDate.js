@@ -9,6 +9,7 @@ const weekdayArray = [
   "Friday,",
   "Saturday,"
 ];
+
 const monthArray = [
   "January",
   "February",
